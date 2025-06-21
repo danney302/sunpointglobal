@@ -7,6 +7,7 @@
   <title>Sun Point Global | SolarWinds Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -84,9 +85,28 @@
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
     section h2 {
       color: #003366;
+    }
+    section.with-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      position: relative;
+    }
+    section.with-image::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    section.with-image > * {
+      position: relative;
+      z-index: 1;
     }
     blockquote {
       border-left: 4px solid #0077cc;
@@ -133,7 +153,7 @@
   </section>
 
   <div class="container">
-    <section id="services">
+    <section id="services" class="with-image" style="background-image: url('https://images.unsplash.com/photo-1612178992290-f6036a6ad1e7?auto=format&fit=crop&w=1400&q=80');">
       <h2>SolarWinds Services</h2>
       <ul>
         <li><strong>Consulting & Architecture</strong>: Custom SolarWinds design and implementation</li>
@@ -149,7 +169,7 @@
       <p>Sun Point Global is led by Daniel Ney, a seasoned expert in SolarWinds deployment and infrastructure monitoring. With experience in both public and private sectors, Daniel delivers strategic insight, technical clarity, and hands-on support to help clients get the most from their SolarWinds investments.</p>
     </section>
 
-    <section id="testimonials">
+    <section id="testimonials" class="with-image" style="background-image: url('https://images.unsplash.com/photo-1581092918320-5c33ef343bc3?auto=format&fit=crop&w=1400&q=80');">
       <h2>What Clients Say</h2>
       <blockquote>
         "Daniel transformed our monitoring operations. His SolarWinds expertise helped us uncover blind spots and save countless engineering hours."
