@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sun Point Global - SolarWinds Consulting and Managed Services" />
   <title>Sun Point Global | SolarWinds Consulting</title>
+  <link rel="icon" href="SunPoint.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
@@ -22,17 +23,40 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px 40px;
+      padding: 20px 20px;
       flex-wrap: wrap;
     }
+    .hamburger {
+      font-size: 28px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none;
+    }
     .logo {
-      max-height: 140px;
+      max-height: 180px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
     }
     nav a {
       margin: 0 12px;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      nav.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
     }
     #hero {
       background: url('https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
@@ -136,6 +160,7 @@
 </head>
 <body>
   <header>
+    <span class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">☰</span>
     <img src="SunPoint.png" alt="Sun Point Global Logo" class="logo" />
     <nav>
       <a href="#services">Services</a>
