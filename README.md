@@ -18,7 +18,7 @@ No package installation, build command, backend, or new hosting service is requi
 - `consulting.html`: all five existing SolarWinds service areas
 - `product.html`: Internet Experience Monitoring concept, planned capabilities, development status, early access interest
 - `use-cases.html`: intended applications, explicitly not deployments
-- `about.html`: Daniel, enterprise monitoring background, earlier IMF Raspberry Pi concept, independent development statement
+- `about.html`: company background, enterprise monitoring experience, generic distributed-probe history
 - `contact.html`: separate consulting and early access email actions
 
 The original `#services`, `#about`, `#testimonials`, and `#contact` homepage URLs redirect to the corresponding content so old links remain useful.
@@ -33,4 +33,4 @@ Contact buttons open an email app. This static site does not collect, store, or 
 
 Passed source checks on six pages, 78 local links/assets, one H1 per page, viewport metadata, active navigation, unchanged CNAME, development labeling, JavaScript syntax, and Git whitespace checks. Browser preview timed out in the execution environment; rendered desktop/mobile verification remains outstanding.
 
-GitHub publication could not be completed because the session's Git credentials were rejected. The ZIP is ready to upload; the companion patch applies against commit 8835d14 of the original repository.
+The website is published through the existing GitHub Pages configuration.
