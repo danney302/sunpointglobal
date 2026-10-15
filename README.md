@@ -18,7 +18,7 @@ No package installation, build command, backend, or new hosting service is requi
 - `consulting.html`: all five existing SolarWinds service areas
 - `product.html`: Internet Experience Monitoring concept, planned capabilities, development status, early access interest
 - `use-cases.html`: intended applications, explicitly not deployments
-- `about.html`: Daniel Ney, enterprise monitoring background, earlier IMF Raspberry Pi concept, independent development statement
+- `about.html`: Daniel, enterprise monitoring background, earlier IMF Raspberry Pi concept, independent development statement
 - `contact.html`: separate consulting and early access email actions
 
 The original `#services`, `#about`, `#testimonials`, and `#contact` homepage URLs redirect to the corresponding content so old links remain useful.
