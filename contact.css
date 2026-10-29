@@ -1,0 +1,19 @@
+/* Contact and feedback share one responsive, accessible form layout. */
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,1fr);gap:48px;align-items:start}
+.contact-form-card{padding:30px;border:1px solid var(--line);border-radius:14px;background:var(--paper,#fff);min-width:0}
+.contact-form-card fieldset{border:0;margin:0;padding:0;min-width:0}
+.contact-form-card label{display:block;font-weight:700;font-size:15px;margin:0 0 18px}
+.contact-form-card input,.contact-form-card select,.contact-form-card textarea{display:block;box-sizing:border-box;width:100%;max-width:100%;margin-top:7px;padding:12px;border:1px solid #8c9da3;border-radius:7px;background:#fff;color:#12313c;font:inherit;font-weight:400;font-size:16px}
+.contact-form-card textarea{min-height:180px;resize:vertical;line-height:1.5}
+.contact-form-card :is(input,select,textarea,button):focus-visible{outline:3px solid #d9772b;outline-offset:3px}
+.contact-form-card fieldset:disabled{opacity:.65}
+.contact-form-card button:disabled{cursor:wait;opacity:.65}
+.contact-form-card button{font:inherit;cursor:pointer}
+.contact-form-card .form-trap{display:none!important}
+.contact-form-card .form-note,.contact-side p{font-size:15px;line-height:1.6}
+.form-status{margin:16px 0 0;line-height:1.6;overflow-wrap:anywhere}
+.form-status:empty{display:none}
+.form-status.form-error{color:#a21d20;font-weight:600}
+.form-retry{border:0;background:none;color:var(--ink,#12313c);padding:10px 0;text-decoration:underline;font:inherit;cursor:pointer}
+.contact-form-card [hidden]{display:none!important}
+@media(max-width:750px){.contact-layout{grid-template-columns:1fr;gap:24px}.contact-form-card{padding:22px}.contact-form-card .button{width:100%;justify-content:center}.contact-side h2{font-size:26px}}
