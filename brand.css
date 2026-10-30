@@ -8,3 +8,6 @@
 .brand{display:inline-flex;flex:0 0 auto;max-width:100%;line-height:1}.eclipse-lockup{display:block;width:280px;height:auto;max-width:100%;background:#fff;border-radius:6px;padding:4px}.footer .eclipse-lockup{width:280px}.eclipse-feature{width:100%;height:auto;background:#fff;border-radius:16px;overflow:hidden}.eclipse-feature img{display:block;width:100%;height:auto}.header-inner{gap:24px}.header-inner nav{min-width:0}@media(max-width:720px){.eclipse-lockup,.footer .eclipse-lockup{width:250px}.header-inner{align-items:flex-start}}
 
 .founder .eclipse-feature{display:block;max-width:260px;margin-bottom:24px}
+
+/* Unified eclipse palette and prominent brand banner. */
+:root{--paper:#fff;--ink:#071c2b;--muted:#47545f;--orange:#9b5600;--soft:#fff8eb;--line:#e6e8eb}header,body{background:#fff}.header-inner{padding:24px 0;gap:32px;flex-wrap:wrap}.eclipse-lockup{width:360px;padding:0;border-radius:0;background:#fff}.footer .eclipse-lockup{width:320px}.footer,footer{background:#fff;color:var(--ink);border-top:1px solid var(--line)}.footer p,.footer-top p,.footer-bottom,footer p{color:var(--muted)}.footer-bottom{border-color:var(--line)}.founder{background:var(--soft)}@media(max-width:720px){.eclipse-lockup{width:310px;max-width:100%}.footer .eclipse-lockup{width:290px;max-width:100%}.header-inner{padding:20px 0;gap:20px}}
