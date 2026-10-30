@@ -35,3 +35,5 @@
 
 /* Identical home-page typography and content grid on both brands. */
 .home-intro h1{font-weight:500;letter-spacing:-.045em;line-height:1.12}body:has(.home-masthead) .wrap{width:min(1240px,calc(100% - 80px))}@media(max-width:1000px){body:has(.home-masthead) .wrap{width:calc(100% - 48px)}}@media(max-width:720px){body:has(.home-masthead) .wrap{width:calc(100% - 36px)}}
+
+@media(max-width:720px){.clean-bundle-home .home-masthead-content nav.site-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}}
