@@ -6,3 +6,5 @@
 
 /* Eclipse identity: exact supplied artwork and matching Beacon wordmark. */
 .brand{display:inline-flex;flex:0 0 auto;max-width:100%;line-height:1}.eclipse-lockup{display:block;width:280px;height:auto;max-width:100%;background:#fff;border-radius:6px;padding:4px}.footer .eclipse-lockup{width:280px}.eclipse-feature{width:100%;height:auto;background:#fff;border-radius:16px;overflow:hidden}.eclipse-feature img{display:block;width:100%;height:auto}.header-inner{gap:24px}.header-inner nav{min-width:0}@media(max-width:720px){.eclipse-lockup,.footer .eclipse-lockup{width:250px}.header-inner{align-items:flex-start}}
+
+.founder .eclipse-feature{display:block;max-width:260px;margin-bottom:24px}
