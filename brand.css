@@ -11,3 +11,5 @@
 
 /* Unified eclipse palette and prominent brand banner. */
 :root{--paper:#fff;--ink:#071c2b;--muted:#47545f;--orange:#9b5600;--soft:#fff8eb;--line:#e6e8eb}header,body{background:#fff}.header-inner{padding:24px 0;gap:32px;flex-wrap:wrap}.eclipse-lockup{width:360px;padding:0;border-radius:0;background:#fff}.footer .eclipse-lockup{width:320px}.footer,footer{background:#fff;color:var(--ink);border-top:1px solid var(--line)}.footer p,.footer-top p,.footer-bottom,footer p{color:var(--muted)}.footer-bottom{border-color:var(--line)}.founder{background:var(--soft)}@media(max-width:720px){.eclipse-lockup{width:310px;max-width:100%}.footer .eclipse-lockup{width:290px;max-width:100%}.header-inner{padding:20px 0;gap:20px}}
+
+:root{--accent:#9b5600}.head{flex-wrap:wrap;gap:26px}.eclipse-feature{background:transparent;border-radius:0}.founder{background:#fff;border:1px solid var(--line)}
