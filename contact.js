@@ -23,6 +23,7 @@
    const response=await fetch(endpoint,{method:'POST',credentials:'omit',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(values)});
    const result=await response.json().catch(()=>({}));if(!response.ok||!result.received)throw new Error(result.error||'We could not send your message. Please try again.');
    complete=true;form.hidden=true;document.querySelector('[data-form-retry]').hidden=true;
+   document.dispatchEvent(new CustomEvent('sunpoint:contact-sent',{detail:{kind:values.kind||'contact'}}));
    notice('Thank you. We received your message. Reference: '+result.reference+'.');status.focus();
   }catch(error){notice(error instanceof TypeError?'We could not connect. Your text is still here; please try again.':error.message||'We could not send your message. Your text is still here; please try again.',true);}
   finally{busy=false;if(!complete){fields.disabled=false;submit.disabled=false;submit.textContent='Send message';}}
